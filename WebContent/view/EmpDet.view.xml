@@ -1,0 +1,21 @@
+<mvc:View controllerName="DemoEmp.controller.EmpDet" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:form="sap.ui.layout.form">
+	<Panel class="sapUiResponsiveMargin" width="auto" headerText="Employee Details" expandable="true" expanded="true">
+		<content>
+			<form:SimpleForm id="objectForm">
+				<form:content>
+					<Label id="EmpNoLbl" text="Employee No."/>
+					<Text id="EmpNo" text="{Empno}"/>
+					<Label text="Name"/>
+					<Text text="{Name}"/>
+					<Label text="DOB"/>
+					<Text text="{Dob}"/>
+					<Label text="Address"/>
+					<Text text="{Addr}"/>
+					<Label text="Mobile"/>
+					<Text text="{Mob}"/>
+				</form:content>
+			</form:SimpleForm>
+		</content>
+	</Panel>
+</mvc:View>

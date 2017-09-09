@@ -1,0 +1,41 @@
+<mvc:View controllerName="DemoEmp.controller.EmpList"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Employee List">
+	<Table id="idProductsTable" inset="false" width="auto"
+		items="{path: '/ET_EMP_LISTSet'}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Products" level="H2" />
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column width="12em">
+				<Text text="Employee No." />
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true">
+				<Text text="Name" />
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+				<Text text="DOB" />
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Address" />
+			</Column>
+			<Column hAlign="End">
+				<Text text="Mobile" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Navigation" press="onPress">
+				<cells>
+					<ObjectIdentifier text="{Empno}" />
+					<Text text="{Name}" />
+					<Text text="{Dob}" />
+					<Text text="{Addr}" />
+					<Text text="{Mob}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	</Page>
+</mvc:View>
