@@ -2,10 +2,12 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	<Page title="Employee List">
 	<Table id="idProductsTable" inset="false" width="auto"
-		items="{path: '/ET_EMP_LISTSet'}">
+		>
 		<headerToolbar>
 			<Toolbar>
 				<Title text="Products" level="H2" />
+				<ToolbarSpacer/>
+				<Button id="addButton" icon="sap-icon://add" press="onAdd" />
 			</Toolbar>
 		</headerToolbar>
 		<columns>
@@ -26,7 +28,7 @@
 			</Column>
 		</columns>
 		<items>
-			<ColumnListItem type="Navigation" press="onPress">
+			<ColumnListItem id='columnListItem' type="Navigation" press="onPress">
 				<cells>
 					<ObjectIdentifier text="{Empno}" />
 					<Text text="{Name}" />

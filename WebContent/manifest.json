@@ -118,6 +118,13 @@
                     "target":[
                         "EmpDet"
                     ]
+                },
+                  {
+                    "pattern":"Create",
+                    "name":"EmpCre",
+                    "target":[
+                        "EmpCre"
+                    ]
                 }
                 
             ],
@@ -131,6 +138,11 @@
                     "viewName":"EmpDet",
                     "viewId":"EmpDet",
                     "viewLevel":2
+                },
+                "EmpCre":{
+                    "viewName":"Create",
+                    "viewId":"Create",
+                    "viewLevel":3
                 },
                 "objectNotFound":{
                     "viewName":"ObjectNotFound",

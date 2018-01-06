@@ -10,7 +10,8 @@ sap.ui.define(['DemoEmp/controller/BaseController'],
      _onObjectMatched: function(oEvent){
     	 var sEmpId = oEvent.getParameter("arguments").empId;
     	 this.getModel().metadataLoaded().then(function() {
-    		 var sObjectPath = this.getModel().createKey("ET_EMP_LISTSet", {
+    		 debugger;
+    		 var sObjectPath = this.getModel().createKey("ET_EMP_DETSet", {
     			 Empno: sEmpId
     		 });
     		 this._bindView("/" + sObjectPath);
@@ -18,17 +19,17 @@ sap.ui.define(['DemoEmp/controller/BaseController'],
     	 
      },
      _bindView: function(sObjectPath){
-    	 var ODataModel = this.getModel();
-    	 
+    	 debugger;
+    	 var ODataModel = this.getModel();    	 
     	 this.getView().bindElement({
     		 path: sObjectPath,
     	     events:{
     	    	 change: this._onBindingChange.bind(this),
     	    	 dataRequested: function(Odata) {
     	    		 debugger;
-    	    		 ODataModel.metadataLoaded.then(function(){
+    	    		// ODataModel.metadataLoaded.then(function(){
     	    			 
-    	    		 });
+    	    		 //});
     	    	 },
     	    	 dataReceived: function(oData) {
     	    		 debugger;

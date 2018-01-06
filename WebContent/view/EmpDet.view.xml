@@ -6,14 +6,12 @@
 				<form:content>
 					<Label id="EmpNoLbl" text="Employee No."/>
 					<Text id="EmpNo" text="{Empno}"/>
-					<Label text="Name"/>
-					<Text text="{Name}"/>
-					<Label text="DOB"/>
-					<Text text="{Dob}"/>
-					<Label text="Address"/>
-					<Text text="{Addr}"/>
-					<Label text="Mobile"/>
-					<Text text="{Mob}"/>
+					<Label text="Branch"/>
+					<Text text="{Branch}"/>
+					<Label text="Institute"/>
+					<Text text="{Institute}"/>
+					<Label text="Route"/>
+					<Text text="{Route}"/>					
 				</form:content>
 			</form:SimpleForm>
 		</content>
